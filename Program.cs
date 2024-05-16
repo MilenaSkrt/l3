@@ -8,13 +8,13 @@ class Program
 
         // // Добавление элементов
         Console.WriteLine("*** ТЕСТИРОВКА ADD*** \n");
-        arrList.Add("apple");
-        arrList.Add("banana");
-        arrList.Add("orange");
+        arrList.Add("1");
+        arrList.Add("2");
+        arrList.Add("3");
 
-        chainList.Add("apple");
-        chainList.Add("banana");
-        chainList.Add("orange");
+        chainList.Add("1");
+        chainList.Add("2");
+        chainList.Add("3");
 
         Console.WriteLine("Список ArrList после добавления элементов:");
         arrList.Print();
@@ -24,8 +24,8 @@ class Program
 
         // // Вставка элемента
          Console.WriteLine("*** ТЕСТИРОВКА Insert***\n");
-         arrList.Insert(1, "grape");
-         chainList.Insert(1, "grape");
+         arrList.Insert(1, "4");
+         chainList.Insert(1, "4");
 
          Console.WriteLine("Список ArrList после вставки элемента:");
          arrList.Print();
@@ -57,13 +57,13 @@ class Program
 
         // // Проверка на равенство списков
          Console.WriteLine("*** ТЕСТИРОВКА Equals***\n");
-         arrList.Add("apple");
-         arrList.Add("banana");
-         arrList.Add("orange");
+         arrList.Add("1");
+         arrList.Add("2");
+         arrList.Add("3");
 
-         chainList.Add("apple");
-         chainList.Add("banana");
-         chainList.Add("orange");
+         chainList.Add("1");
+         chainList.Add("2");
+         chainList.Add("3");
 
          bool areListsEqual = arrList.Equals(chainList);
          Console.WriteLine($"Списки {(areListsEqual ? "одинаковы" : "различны")}.");
@@ -81,8 +81,8 @@ class Program
          Console.WriteLine("*** ТЕСТИРОВКА Assign***\n");
          BaseList<string> assignedList = new ArrList<string>();
 
-         assignedList.Add("pineapple");
-         assignedList.Add("grapefruit");
+         assignedList.Add("5");
+         assignedList.Add("6");
 
          Console.WriteLine("Исходный список dynamicList:");
          arrList.Print();
@@ -99,11 +99,11 @@ class Program
 
         // // Проверка метода AssignTo
          Console.WriteLine("*** ТЕСТИРОВКА AssignTo***\n");
-         arrList.Add("watermelon");
+         arrList.Add("8");
          BaseList<string> assignedToList = new ArrList<string>();
 
-         assignedToList.Add("grapes");
-         assignedToList.Add("kiwi");
+         assignedToList.Add("9");
+         assignedToList.Add("0");
 
          Console.WriteLine("Список ArrList после применения метода Assign:");
          arrList.Print();
@@ -146,13 +146,13 @@ class Program
          BaseList<string> arrListNew = new ArrList<string>();
          BaseList<string> chainListNew = new ChainList<string>();
 
-         arrListNew .Add("apple");
-         arrListNew .Add("banana");
-         arrListNew .Add("orange");
+         arrListNew .Add("1");
+         arrListNew .Add("2");
+         arrListNew .Add("3");
 
-         chainListNew.Add("apple");
-         chainListNew.Add("banana");
-         chainListNew.Add("orange");
+         chainListNew.Add("1");
+         chainListNew.Add("2");
+         chainListNew.Add("3");
 
          arrListNew .ForEach(arrListNew );
          Console.WriteLine();
@@ -184,10 +184,10 @@ class Program
          numbers.Print();
 
          BaseList<string> strings = new ArrList<string>();
-         strings.Add("apple");
-         strings.Add("orange");
-         strings.Add("banana");
-         strings.Add("grape");
+         strings.Add("1");
+         strings.Add("2");
+         strings.Add("3");
+         strings.Add("4");
 
          Console.WriteLine("Исходный список строк:");
          strings.Print();
@@ -214,10 +214,10 @@ class Program
          numbersList.Print();
 
          BaseList<string> stringsList = new ChainList<string>();
-         stringsList.Add("apple");
-         stringsList.Add("orange");
-         stringsList.Add("banana");
-         stringsList.Add("grape");
+         stringsList.Add("1");
+         stringsList.Add("2");
+         stringsList.Add("3");
+         stringsList.Add("4");
 
          Console.WriteLine("Исходный список строк:");
          stringsList.Print();
